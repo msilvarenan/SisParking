@@ -26,22 +26,22 @@
 			</tr>
 			<tr>
 				<td class="<c:if test="${FuncionarioLogado.id  % 2 == 0}">LinhaICE</c:if><c:if test="${FuncionarioLogado.id  % 2 != 0}">LinhaPCE</c:if>" height="30px">
-					${FuncionarioLogado.nome}
+					${FuncionarioLogado.nome}<br><input type="text" name="nome" id="nome" placeholder="${FuncionarioLogado.nome}" style="display:none"/>
 				</td>
 				<td class="<c:if test="${FuncionarioLogado.id  % 2 == 0}">LinhaICE</c:if><c:if test="${FuncionarioLogado.id  % 2 != 0}">LinhaPCE</c:if>">
-					${FuncionarioLogado.cpf }
+					${FuncionarioLogado.cpf }<br><input type="text" name="cpf" id="cpf" placeholder="${FuncionarioLogado.cpf}" style="display:none"/>
 				</td>
 				<td class="<c:if test="${FuncionarioLogado.id  % 2 == 0}">LinhaICE</c:if><c:if test="${FuncionarioLogado.id  % 2 != 0}">LinhaPCE</c:if>">
-					<fmt:formatDate value="${FuncionarioLogado.dataAdmissao.time }" pattern="dd/MM/yyyy" />
+					<fmt:formatDate value="${FuncionarioLogado.dataAdmissao.time }" pattern="dd/MM/yyyy" /><br><input type="text" name="dataAdmissao" id="dataAdmissao" placeholder="<fmt:formatDate value="${FuncionarioLogado.dataAdmissao.time }" pattern="dd/MM/yyyy" />" style="display:none"/>
 				</td>
 				<td class="<c:if test="${FuncionarioLogado.id  % 2 == 0}">LinhaICE</c:if><c:if test="${FuncionarioLogado.id  % 2 != 0}">LinhaPCE</c:if>">
-					${FuncionarioLogado.usuario }
+					${FuncionarioLogado.usuario }<br><input type="text" name="usuario" id="usuario" placeholder="${FuncionarioLogado.usuario}" style="display:none"/>
 				</td>
 				<td class="<c:if test="${FuncionarioLogado.id  % 2 == 0}">LinhaICE</c:if><c:if test="${FuncionarioLogado.id  % 2 != 0}">LinhaPCE</c:if>">
-					${FuncionarioLogado.senha }
+					${FuncionarioLogado.senha }<br><input type="text" name="senha" id="senha" placeholder="${FuncionarioLogado.senha}" style="display:none"/>
 				</td>
 				<td class="<c:if test="${FuncionarioLogado.id  % 2 == 0}">LinhaICD</c:if><c:if test="${FuncionarioLogado.id  % 2 != 0}">LinhaPCD</c:if>">
-					<a href="ExcluirFuncionario"><img src="imagens/edit-icon.png" width="30px" height="30px"/></a>
+					<a href="#" onclick="liberaAlteracao();"><img src="imagens/edit-icon.png" width="30px" height="30px"/></a>
 				</td>
 			</tr>
 		</table>		
@@ -81,5 +81,14 @@
 			<td colspan="5" style="text-align:right"><a href="FormularioAdicionarFuncionario" class="link">Adicionar um novo Funcionário</a></td>
 		</tr>
 	</table>
+	<script type="text/javascript">
+	function liberaAlteracao(){
+		document.getElementById("nome").style.display = "";
+		document.getElementById("cpf").style.display = "";
+		document.getElementById("dataAdmissao").style.display = "";
+		document.getElementById("usuario").style.display = "";
+		document.getElementById("senha").style.display = "";
+	}
+	</script>
 </body>
 </html>

@@ -4,9 +4,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
-import br.com.sisparking.manipulacaodados.CPF;
 import br.com.sisparking.pessoas.Funcionario;
 
 import com.mysql.jdbc.Connection;
@@ -44,6 +44,9 @@ public class DaoFuncionario {
 	            funcCadastrado.setNome(rs.getString("nomeFuncionario"));
 	            funcCadastrado.setId(rs.getInt("idFuncionario"));
 	            funcCadastrado.setCpf(rs.getString("cpf"));
+	            Calendar data = Calendar.getInstance();
+	            data.setTime(rs.getDate("dataAdmissao"));
+	            funcCadastrado.setDataAdmissao(data);
 	            funcCadastrado.setSalario(rs.getFloat("salario"));
 	            funcCadastrado.setSalario(rs.getDouble("salario"));
 	            funcCadastrado.setUsuario(rs.getString("usuario"));
@@ -75,7 +78,9 @@ public class DaoFuncionario {
 	        	funcTemp.setNome(rs.getString("nomeFuncionario"));
 	        	funcTemp.setCpf(rs.getString("cpf"));
 	        	funcTemp.setSalario(rs.getFloat("salario"));
-	        	funcTemp.setDataAdmissao(rs.getString("dataAdmissao"));
+	        	Calendar data = Calendar.getInstance();
+	            data.setTime(rs.getDate("dataAdmissao"));
+	        	funcTemp.setDataAdmissao(data);
 	        	funcTemp.setEstaNaEmpresa(rs.getInt("estaNaEmpresa"));
 	        	funcTemp.setUsuario(rs.getString("usuario"));
 	        	funcTemp.setSenha(rs.getString("senha"));
