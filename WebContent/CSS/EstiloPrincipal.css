@@ -1,0 +1,165 @@
+@CHARSET "ISO-8859-1";
+
+.menuClass{
+background-image:url('imagens/banner-parking.jpg'); 
+background-repeat:no-repeat;
+text-decoration:none;
+}
+.link:link{
+text-decoration: none;
+font-weight: bold;
+font-family: Arial, Verdana, Helvetica;
+}
+.link:visited{
+text-decoration: none;
+font-weight: bold;
+font-family: Arial, Verdana, Helvetica;
+}
+.link:hover{
+text-decoration: underline;
+color: #4b63ca;
+font-weight: bold;
+font-family: Arial, Verdana, Helvetica;
+}
+.link:active{
+text-decoration: none;
+font-size: 11px;
+font-weight: bold;
+font-family: Arial, Verdana, Helvetica;
+}
+.literalMenu{
+font-family:Arial, verdana, Helvetica;
+border-top:0px; 
+border-right:1px solid #ccc; 
+border-left:0px; 
+border-bottom:0px
+}
+.literalMenuD{
+font-family:Arial, verdana, Helvetica;
+border-top:0px; 
+border-right:0px; 
+border-left:0px; 
+border-bottom:0px; 
+text-align:center;
+}
+.subTitulo{
+background-color: #CDCDCD;
+text-align:left;
+font-family:Arial, verdana, Helvetica;
+font-size:25px;
+border:0px;
+celspacing:0px;
+celspadding:0px;
+}
+.literalCampo{
+text-align:left;
+font-family:Arial, verdana, Helvetica;
+font-size:15px;
+font-weight: bold;
+border:0px;
+}
+.literalDado{
+text-align:right;
+font-family:Arial, verdana, Helvetica;
+font-size:15px;
+border:0px;
+}
+.CabecalhoTabelaE{
+color:#333333;
+background:#CDCDCD;
+text-decoration:none;
+font-size:15px;
+font-weight:bold;
+font-family:Arial;
+text-align:center;
+border-bottom:1px solid #545454;
+border-left:1px solid #545454;
+border-top:1px solid #545454;
+padding-right: 2px;
+padding-left:2px
+}
+.CabecalhoTabelaDE{
+color:#333333;
+background:#CDCDCD;
+text-decoration:none;
+font-size:15px;
+font-weight:bold;
+font-family:Arial;
+text-align:center;
+border-bottom:1px solid #545454;
+border-right:1px solid #545454;
+border-left:1px solid #545454;
+border-top:1px solid #545454;
+padding-right: 2px;
+padding-left:2px
+}
+.LinhaICE{
+font-size:12px;
+font-weight:normal;
+text-align:center;
+font-family:Arial;
+background:#E6E8FA;
+border-left:1px solid #c6c6c6;
+border-bottom:1px solid #c6c6c6;
+}
+.LinhaICD{
+font-size:12px;
+font-weight:normal;
+text-align:center;
+font-family:Arial;
+background:#E6E8FA;
+border-left:1px solid #c6c6c6;
+border-right:1px solid #c6c6c6;
+border-bottom:1px solid #c6c6c6;
+}
+.LinhaPCE{
+font-size:12px;
+font-weight:normal;
+text-align:center;
+font-family:Arial;
+background:#FFFFFF;
+border-left:1px solid #c6c6c6;
+border-bottom:1px solid #c6c6c6;
+}
+.LinhaPCD{
+font-size:12px;
+font-weight:normal;
+text-align:center;
+font-family:Arial;
+background:#FFFFFF;
+border-left:1px solid #c6c6c6;
+border-right:1px solid #c6c6c6;
+border-bottom:1px solid #c6c6c6;
+}
+input[type=text], input[type=email], input[type=serch], input[type=url], input[type=tel], input[type=number],input[type=password], textarea[type=text]{
+	width:70%;
+	border:1px solid #adadad;
+	color: #464646;
+	font-size: 12px;
+	padding:8px 4px;
+	border-radius:4px;
+	transition:all 200ms ease-in;
+	line-height:nomal;
+	font:inherit;
+	margin:0;
+	box-sizing:border-box;
+}
+input, textarea, keygen, select, user agent stylesheet button{
+	letter-rendering:auto;
+	letter-spacing:normal;
+	word-spacing:normal;
+	text-transform:none;
+	text-indent:0px;
+	text-shadown:none;
+	display:inline-block;
+	text-align:start;
+}
+input, textarea, keygen, select, user agent stylesheet button, meter, progress{
+	-webkit-writing-mode: horizontal-tb;
+}
+::selection{
+	background: #ec7404;
+	color: #fff;
+	text-shadown: none;
+	
+}
